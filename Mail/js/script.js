@@ -13,14 +13,13 @@ var emailUtente = prompt( "Inserisci la tua email" );
 //2 controlla nella lista chi può accedere
 var emailValida;
 for (var j = 0; j < listaEmail.lenght; j++ ) {
-
 }
 
+
+//3 stampa un messaggio appropriato sull’esito del controllo
 if ( emailUtente == listaEmail[j] ) {
   alert("sei valido");
   emailValida = emailUtente;
 } else {
   alert("non sei valido");
 }
-
-//3 stampa un messaggio appropriato sull’esito del controllo
