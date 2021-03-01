@@ -6,17 +6,19 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto. */
 
 
 var giocatore = prompt("Inserisci il tuo nome");
-var giocatoreNum = Math.floor(Math.random() * 7) +1 ;
-console.log(giocatore + "questo è il tuo numero " + giocatoreNum);
+var giocatoreNum = Math.floor(Math.random() * 6) +1 ;
+console.log(giocatore + " questo è il tuo numero " + giocatoreNum);
 
 var computer = ("Computer ");
-var computerNum = Math.floor(Math.random() * 7) +1 ;
+var computerNum = Math.floor(Math.random() * 6) +1 ;
 console.log("Questo è il numero del " + computer + computerNum);
 
 // 2 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 if (giocatoreNum > computerNum) {
-  alert( "Hai vinto!")
+  alert( giocatore + " Hai vinto!")
 } else if (computerNum > giocatoreNum) {
-  alert("Hai perso!")
+  alert( giocatore + " Hai perso!")
+} else if (computerNum == giocatoreNum){
+  alert("Parità!")
 }
